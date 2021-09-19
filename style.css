@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+html,
+body,
+h1,h2,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top -100px left -190px, bottom -100px right -180px;
+    background-size: 100%, 100%;
+
+}
+.container {
+    width: 330px;
+    height: 360px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    overflow: hidden;
+   
+}
+.profile__bg {
+    min-width: 100%;
+
+}
+.profile__info img {
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    margin-top: -60px;
+
+    
+    
+}
+.profile__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span {
+    margin-left: .5rem;
+    font-family: 'kumbh';
+    font-size: 23px;
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+}
+.profile__info p {
+    color:hsl(227, 10%, 46%);
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-family: 'kumbh';
+    font-size: 18pxrem;
+    font-weight: 400;
+    
+}
+h2,h3 {
+    margin: 0;
+    color: hsl(229, 23%, 23%);
+}
+h2 {
+    font-size: 1.3rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+.likes p {
+    margin-left: 8.5px;
+}
+.flwrs {
+    margin-left: 40px;
+}
+.likes {
+    margin-right: 20px;
+}
+.phts {
+    margin-right: 50px;
+}
+.social__stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    line-height: 1.6;
+
+}
+.social__stats p {
+    font-size: 12px;
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+}
+.attribution {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 14%;
+}
+
+@media (min-width:750px) and (max-width:1440px){
+    body {
+        background-position: top -600px left -400px, bottom -740px right -320px;
+        background-size: 80%
+    }
+    .container {
+        width: 375px;
+        height: 60%;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 90px;
+        margin-left: 40.2%;
+    }
+}
